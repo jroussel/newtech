@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link type="text/css"  rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/main.css" />
+
+
+	<title>Newtech Intranet modal2</title>
+</head>
+<body style="background-color: #FFFFFF; background-image: none;">
+
+
+
+	   	 <div class="numerotation">
+		   	 <div class="controls">
+				<div class="input-append">
+					<input class="numerotation_input listen_remove_input" id="numerotation_input_small" type="text">
+					<a href="#" class="add-on listen_remove"><i class="icon-step-backward"></i></a>
+				</div>
+			</div>
+
+		   	 <table class="numbers_holder">
+		   	 	<tr>
+		   	 		<td><a href="#" rel="1" class="btn listen_add"><img src="img/numero/01.png" width="16" height="32" alt="" border="0" /></a></td>
+		   	 		<td class="sep">&nbsp;</td>
+		   	 		<td><a href="#" rel="2" class="btn listen_add"><img src="img/numero/02.png" width="16" height="32" alt="" border="0" /></a></td>
+		   	 		<td class="sep">&nbsp;</td>
+		   	 		<td><a href="#" rel="3" class="btn listen_add"><img src="img/numero/03.png" width="16" height="32" alt="" border="0" /></a></td>
+				</tr>
+				<tr>
+					<td colspan="5" class="row_sep">&nbsp;</td>
+				</tr>
+				<tr>
+		   	 		<td><a href="#" rel="4" class="btn listen_add"><img src="img/numero/04.png" width="16" height="32" alt="" border="0" /></a></td>
+		   	 		<td class="sep">&nbsp;</td>
+		   	 		<td><a href="#" rel="5" class="btn listen_add"><img src="img/numero/05.png" width="16" height="32" alt="" border="0" /></a></td>
+		   	 		<td class="sep">&nbsp;</td>
+		   	 		<td><a href="#" rel="6" class="btn listen_add"><img src="img/numero/06.png" width="16" height="32" alt="" border="0" /></a></td>
+				</tr>
+				<tr>
+					<td colspan="5" rel="3" class="row_sep">&nbsp;</td>
+				</tr>
+				<tr>
+		   	 		<td><a href="#" rel="7" class="btn listen_add"><img src="img/numero/07.png" width="16" height="32" alt="" border="0" /></a></td>
+		   	 		<td class="sep">&nbsp;</td>
+		   	 		<td><a href="#" rel="8" class="btn listen_add"><img src="img/numero/08.png" width="16" height="32" alt="" border="0" /></a></td>
+		   	 		<td class="sep">&nbsp;</td>
+		   	 		<td><a href="#" rel="9" class="btn listen_add"><img src="img/numero/09.png" width="16" height="32" alt="" border="0" /></a></td>
+				</tr>
+				<tr>
+					<td colspan="5" class="row_sep">&nbsp;</td>
+				</tr>
+				<tr>
+		   	 		<td><a href="#" rel="*" class="btn listen_add"><img src="img/numero/etoile.png" width="16" height="32" alt="" border="0" /></a></td>
+		   	 		<td class="sep">&nbsp;</td>
+		   	 		<td><a href="#" rel="0" class="btn listen_add"><img src="img/numero/00.png" width="16" height="32" alt="" border="0" /></a></td>
+		   	 		<td class="sep">&nbsp;</td>
+		   	 		<td><a href="#" rel="#" class="btn listen_add"><img src="img/numero/diese.png" width="16" height="32" alt="" border="0" /></a></td>
+				</tr>
+			 </table>
+
+			 <div class="numerotation_action">
+			 	<a href="#" title="Appel" class="btn_call">Appel</a>
+			 </div>
+
+
+		 </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+
+$(document).ready(function(){
+	$( ".listen_remove" ).click(function() {
+		val = $(this).parent().find('.listen_remove_input').val();
+		length = val.length - 1;
+		val = val.substring(0, length);
+
+		$(this).parent().find('.listen_remove_input').val(val);
+	});
+
+	$( ".listen_add" ).click(function() {
+		input_element = $(this).parents('.numerotation').find('.listen_remove_input')
+		val = input_element.val()+$(this).attr('rel');
+		input_element.val(val);
+	});
+});
+
+/* ]]> */
+</script>
+
+</body>
+</html>
