@@ -643,6 +643,11 @@ form, fieldset{
 	width: 108px;
 }
 
+#transfert_r_c #search_input,
+#numerotation_input_small{
+	border-right: none;
+}
+
 .numbers_holder .sep{
 	margin: 0;
 	padding: 0;
