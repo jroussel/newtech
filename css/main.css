@@ -571,6 +571,11 @@ form, fieldset{
 	font-weight: normal;
 }
 
+.a_modal .modal-header h3.numerotation_title{
+	background: url("../img/numerotation_icon.png") no-repeat scroll 5px 4px transparent;
+	padding-left: 22px;
+}
+
 .a_modal .modal-header .close {
 	padding: 3px 5px 0 0;
 	opacity: 1;
