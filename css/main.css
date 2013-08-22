@@ -535,11 +535,16 @@ form, fieldset{
 	text-transform: uppercase;
 }
 
-#wrap_r_c{
+#wrap_r_c_holder{
 	width: 688px;
 	margin: 0;
 	padding: 5px 11px;
 	background: url("../img/right_c.png") repeat-y scroll 0 0 transparent;
+}
+
+#wrap_r_c{
+	height: 559px;
+	overflow-y: auto;
 }
 
 #wrap_r_b{
