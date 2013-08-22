@@ -600,6 +600,11 @@ form, fieldset{
 	margin: 0 8px 0 0;
 }
 
+.modal_small{
+	margin-left: -90px;
+	width: 180px;
+}
+
 .modal_large{
 	margin-left: -440px;
 	width: 880px;
