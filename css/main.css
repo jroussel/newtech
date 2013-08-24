@@ -667,12 +667,77 @@ form, fieldset{
 	border-right: none;
 }
 
+.input_holder{
+	background: url("../img/submit_holder_small.gif") no-repeat scroll 0 0 transparent;
+	padding: 2px 3px;
+	margin: 0 0 10px 0;
+}
+
+
+
+.input_holder input {
+	float: left;
+}
+
+.remove_link{
+	background: url("../img/submit_01.gif") no-repeat scroll 0 1px transparent;
+	display: block;
+	width: 16px;
+	height: 16px;
+	text-indent: -9999px;
+	margin: 0;
+	padding: 0;
+
+	float: left;
+}
+
+#numerotation_input_small{
+	border: none;
+	border-radius: 0 0 0 0;
+	padding: 0 6px;
+	margin: 0;
+	height: 17px;
+	line-height: 13px;
+	font-size: 11px;
+	width: 111px;
+}
+
+.input_holder_large{
+	background: url("../img/submit_holder_large.gif") no-repeat scroll 0 0 transparent;
+	width: 217px;
+	height: 18px;
+	padding: 3px 3px 2px 3px;
+}
+
+#search_input{
+	border: none;
+	border-radius: 0 0 0 0;
+	padding: 0 6px;
+	margin: 0;
+	height: 17px;
+	line-height: 13px;
+	font-size: 11px;
+	width: 189px;
+}
+
+.sent_link{
+	background: url("../img/submit_02.gif") no-repeat scroll 0 1px transparent;
+	display: block;
+	width: 16px;
+	height: 16px;
+	text-indent: -9999px;
+	margin: 0;
+	padding: 0;
+
+	float: left;
+}
+
 .numbers_holder .sep{
 	margin: 0;
 	padding: 0;
 	line-height: 0;
 	font-size: 0;
-	width: 9px;
+	width: 6px;
 	height: 1px;
 }
 
