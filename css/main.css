@@ -637,6 +637,11 @@ form, fieldset{
 }
 
 .modal_large{
+	margin-left: -150px;
+	width: 300px;
+}
+
+.modal_xlarge{
 	margin-left: -440px;
 	width: 880px;
 }
