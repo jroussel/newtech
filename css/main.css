@@ -37,7 +37,7 @@ form, fieldset{
 
 #header_cnt_t{
 	height: 51px;
-	width: 784px;
+	width: 784px; /* à modifier pour élargir le template */
 	margin: 0 auto;
 	padding: 0 12px 0 150px;
 	position: relative;
@@ -142,7 +142,7 @@ form, fieldset{
 
 #header_cnt_b{
 	height: 30px;
-	width: 946px;
+	width: 946px; /* à modifier pour élargir le template */
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
@@ -197,7 +197,7 @@ form, fieldset{
 }
 
 #wrapper{
-	width: 952px;
+	width: 952px; /* à modifier pour élargir le template */
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
@@ -248,9 +248,14 @@ form, fieldset{
 
 #wrap_l_c{
 	width: 220px;
-	margin: 0;
-	padding: 0 11px 7px 11px;
-	background: url("../img/left_c.png") repeat-y scroll 0 0 transparent;
+	margin: 0 0 0 4px;
+
+	background-color: #FFFFFF;
+	padding: 0 7px 7px 7px;
+
+	-moz-box-shadow: 0 0 2px 1px #888;
+	-webkit-box-shadow: 0 0 2px 1px #888;
+	box-shadow: 0 0 2px 1px #888;
 }
 
 
@@ -486,19 +491,6 @@ form, fieldset{
 	background-image: url("../img/btn_rescue_off.png");
 }
 
-
-
-#wrap_l_b{
-	width: 242px;
-	margin: 0;
-	padding: 0;
-	line-height: 0;
-	font-size: 0;
-	background: url("../img/left_b.png") no-repeat scroll 0 100% transparent;
-	height: 6px;
-}
-
-
 #wrap_r{
 	width: 710px;
 	float: left;
@@ -508,14 +500,18 @@ form, fieldset{
 
 #myTab{
 	margin: 0;
+	border-bottom: none;
+	width: 697px; /* à modifier pour élargir le template */
 }
 
 #wrap_r_t{
-	padding: 0 3px;
+	padding: 0 2px;
 	position: relative;
 }
 
 #wrap_r_t_sep{
+	display: none;
+
 	background: url("../img/right_t.png") no-repeat scroll 0 100% transparent;
 	height: 9px;
 	width: 100%;
@@ -523,6 +519,10 @@ form, fieldset{
 	bottom: 0;
 	left: 0;
 	z-index: 10;
+}
+
+#wrap_r_t .nav-tabs > li{
+	margin-bottom: 0;
 }
 
 #wrap_r_t .nav-tabs > .active > a,
@@ -536,6 +536,12 @@ form, fieldset{
 	z-index: 99;
 	position: relative;
 	color: #432e2e;
+
+	-moz-box-shadow: -1px -2px 2px -1px #888888;
+	-webkit-box-shadow:  -1px -2px 2px -1px #888888;
+	box-shadow:  -1px -2px 2px -1px #888888;
+
+	border-bottom: none;
 }
 
 #wrap_r_t .nav-tabs > li > a {
@@ -545,13 +551,19 @@ form, fieldset{
 	font-size: 10px;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin: 0 4px 0 0;
+	border-bottom: none;
 }
 
 #wrap_r_c_holder{
-	width: 688px;
-	margin: 0;
-	padding: 5px 11px;
-	background: url("../img/right_c.png") repeat-y scroll 0 0 transparent;
+	width: 688px; /* à modifier pour élargir le template */
+	background-color: #FFFFFF;
+
+	-moz-box-shadow: 0 0 2px 1px #888;
+	-webkit-box-shadow: 0 0 2px 1px #888;
+	box-shadow: 0 0 2px 1px #888;
+	margin: 0 3px;
+	padding: 5px 4px;
 }
 
 #wrap_r_c{
@@ -560,6 +572,8 @@ form, fieldset{
 }
 
 #wrap_r_b{
+	display: none;
+
 	width: 710px;
 	margin: 0;
 	padding: 0;
