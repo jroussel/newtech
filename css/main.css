@@ -84,12 +84,6 @@ form, fieldset{
 }
 
 
-#status_selector{
-	min-width: 30px;
-	width: 30px;
-
-}
-
 #header_cnt_t  .btn-group{
 	float: right;
 }
@@ -97,13 +91,24 @@ form, fieldset{
 #header_cnt_t .btn-group > .btn,#header_cnt_t  .btn-group > .popover {
 	font-size: 14px;
 	padding: 2px 4px;
-	width: 40px;
+	width: 42px;
 	margin-top: 15px;
+	border: 1px solid #473333;
+	background: url("../img/user_selector_bg.gif") repeat-y scroll 100% 0px transparent;
+}
+
+#status_selector{
+	border-radius: 6px 0px 6px 6px;
+	padding-bottom: 0;
+	margin-top: 0px;
+	min-width: 20px;
+	width: 20px;
+	border: 1px solid #473333;
 }
 
 #status_selector,
 #header_cnt_t li{
-	width: 30px;
+	width: 20px;
 
 }
 
@@ -112,7 +117,7 @@ form, fieldset{
 	height: 16px;
 	padding: 0 0 3px 0;
 	margin: 0 0 3px 0;
-	width: 30px;
+	width: 20px;
 }
 
 #header_cnt_t .dropdown-menu > li.last{
@@ -121,7 +126,7 @@ form, fieldset{
 
 #header_cnt_t .dropdown-menu > li > a{
 	width: 15px;
-	padding: 0 5px 0 8px;
+	padding: 0 3px;
 }
 
 #header_cnt_t .btn{
@@ -138,6 +143,9 @@ form, fieldset{
 
 #header_cnt_t .btn-group .caret{
 	float: left;
+	border-bottom-color: #FFFFFF;
+	border-top-color: #FFFFFF;
+	margin: 7px 0 0 5px;
 }
 
 #header_cnt_b{
