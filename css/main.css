@@ -196,6 +196,7 @@ form, fieldset{
 #header_cnt_r ul{
 	margin: 0 10px 0 0;
 	font-size: 11px;
+	height: 30px;
 }
 
 .header_list li .span_pause{
