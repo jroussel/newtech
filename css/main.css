@@ -37,7 +37,6 @@ form, fieldset{
 
 #header_cnt_t{
 	height: 51px;
-	width: 784px; /* à modifier pour élargir le template */
 	margin: 0 auto;
 	padding: 0 12px 0 150px;
 	position: relative;
@@ -51,7 +50,7 @@ form, fieldset{
 	width: 145px;
 	height: 26px;
 	text-indent: -9999px;
-	margin: 0;
+	margin: 0 0 0 12px;
 	padding: 0;
 	text-align: left;
 
@@ -150,7 +149,6 @@ form, fieldset{
 
 #header_cnt_b{
 	height: 30px;
-	width: 946px; /* à modifier pour élargir le template */
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
@@ -206,7 +204,6 @@ form, fieldset{
 }
 
 #wrapper{
-	width: 952px; /* à modifier pour élargir le template */
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
@@ -215,9 +212,8 @@ form, fieldset{
 #wrap_l{
 	width: 242px;
 	float: left;
-	margin: 0;
+	margin: 0 12px;
 	padding: 0;
-	position: relative;
 }
 
 #wrap_l_t{
@@ -235,7 +231,7 @@ form, fieldset{
 	position: relative;
 }
 
-#contact_btn{
+#contact_btn {
 	background: url("../img/contact_btn.png") no-repeat scroll 0 0 transparent;
 	display: block;
 	width: 113px;
@@ -244,12 +240,10 @@ form, fieldset{
 	margin: 0;
 	padding: 0;
 	text-align: left;
-
 	position: absolute;
 	top: 0px;
-	right: 0px;
+	left: 141px;
 }
-
 
 #wrap_l_t p{
 	margin: 0;
@@ -262,9 +256,9 @@ form, fieldset{
 	background-color: #FFFFFF;
 	padding: 0 7px 7px 7px;
 
-	-moz-box-shadow: 0 0 4px 1px #888;
-	-webkit-box-shadow: 0 0 4px 1px #888;
-	box-shadow: 0 0 4px 1px #888;
+	-moz-box-shadow: 0 0 2px 1px #888;
+	-webkit-box-shadow: 0 0 2px 1px #888;
+	box-shadow: 0 0 2px 1px #888;
 }
 
 
@@ -448,44 +442,64 @@ form, fieldset{
 	padding: 0;
 }
 
-.btn_call{
+.modal_call{
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-position: 0 0;
+	display: block;
+	width: 16px;
+	height: 16px;
+	text-indent: -9999px;
+	margin: 0;
+	padding: 0;
+	background-image: url("../img/btn_call_small.png");
+}
+.modal_call:hover{
+	background-image: url("../img/btn_call_small_hover.png");
+}
+
+.btn_call_only{
 	background-image: url("../img/btn_call_on.png");
 }
 
-.btn_call_off{
+.btn_call{
 	background-image: url("../img/btn_call_off.png");
 }
 
 .btn_record{
+	background-image: url("../img/btn_reccord_off.png");
+}
+.btn_record:hover{
 	background-image: url("../img/btn_reccord_on.png");
 }
 
-.btn_record_off{
-	background-image: url("../img/btn_reccord_off.png");
+.btn_record_on{
+	background-image: url("../img/btn_reccord_on.png");
 }
-
-.btn_record_cross{
+.btn_record_on:hover{
 	background-image: url("../img/btn_reccord_cross.png");
 }
 
 .btn_pause{
+	background-image: url("../img/btn_pause_off.png");
+}
+.btn_pause:hover{
 	background-image: url("../img/btn_pause_on.png");
 }
 
-.btn_pause_off{
-	background-image: url("../img/btn_pause_off.png");
+.btn_pause_on{
+	background-image: url("../img/btn_pause_on.png");
 }
-
-.btn_pause_call{
+.btn_pause_on:hover{
 	background-image: url("../img/btn_pause_call.png");
 }
 
 .btn_transfert{
-	background-image: url("../img/btn_transfert_on.png");
-}
-
-.btn_transfert_off{
 	background-image: url("../img/btn_transfert_off.png");
+}
+.btn_transfert:hover{
+	background-image: url("../img/btn_transfert_on.png");
 }
 
 .btn_transfert_cross{
@@ -493,24 +507,23 @@ form, fieldset{
 }
 
 .btn_rescue{
-	background-image: url("../img/btn_rescue_on.png");
-}
-
-.btn_rescue_off{
 	background-image: url("../img/btn_rescue_off.png");
 }
 
+.btn_rescue:hover{
+	background-image: url("../img/btn_rescue_on.png");
+}
+
 #wrap_r{
-	width: 710px;
 	float: left;
-	margin: 0;
+	margin: 0 0 0 260px;
 	padding: 0;
+	position: absolute;
 }
 
 #myTab{
 	margin: 0;
 	border-bottom: none;
-	width: 697px; /* à modifier pour élargir le template */
 }
 
 #wrap_r_t{
@@ -546,9 +559,9 @@ form, fieldset{
 	position: relative;
 	color: #432e2e;
 
-	-moz-box-shadow: -3px -4px 4px -3px #888888;
-	-webkit-box-shadow:  -3px -4px 4px -3px #888888;
-	box-shadow:  -3px -4px 4px -3px #888888;
+	-moz-box-shadow: -1px -2px 2px -1px #888888;
+	-webkit-box-shadow:  -1px -2px 2px -1px #888888;
+	box-shadow:  -1px -2px 2px -1px #888888;
 
 	border-bottom: none;
 }
@@ -565,18 +578,17 @@ form, fieldset{
 }
 
 #wrap_r_c_holder{
-	width: 688px; /* à modifier pour élargir le template */
 	background-color: #FFFFFF;
 
-	-moz-box-shadow: 0 0 4px 1px #888;
-	-webkit-box-shadow: 0 0 4px 1px #888;
-	box-shadow: 0 0 4px 1px #888;
+	-moz-box-shadow: 0 0 2px 1px #888;
+	-webkit-box-shadow: 0 0 2px 1px #888;
+	box-shadow: 0 0 2px 1px #888;
 	margin: 0 3px;
 	padding: 5px 4px;
 }
 
 #wrap_r_c{
-	height: 559px;
+	height: 620px;
 	overflow-y: auto;
 }
 

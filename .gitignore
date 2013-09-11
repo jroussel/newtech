@@ -1,0 +1,6 @@
+.htaccess
+.htpasswd
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
