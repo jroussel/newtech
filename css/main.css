@@ -218,17 +218,30 @@ form, fieldset{
 
 #wrap_l_t{
 	width: 121px;
-	margin: 0;
-	padding: 13px 117px 0 4px;
+	margin: 0 114px 0 3px;
+	padding: 13px 0 0 0;
 	line-height: 12px;
 	font-size: 10px;
 	font-weight: bold;
 	text-transform: uppercase;
-	background: url("../img/left_t.png") no-repeat scroll 0 0 transparent;
+	background-color: #FFFFFF;
 	height: 24px;
 	color: #432e2e;
 	text-align: center;
 	position: relative;
+
+	border-image: none;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c2c2c2 #c2c2c2 transparent;
+	border-radius: 0 0 0 0;
+	background-color: #FFFFFF;
+	border-bottom: none;
+
+
+	-moz-box-shadow: -1px -2px 2px -1px #888888;
+	-webkit-box-shadow:  -1px -2px 2px -1px #888888;
+	box-shadow:  -1px -2px 2px -1px #888888;
 }
 
 #contact_btn {
@@ -254,7 +267,7 @@ form, fieldset{
 	margin: 0 0 10px 4px;
 
 	background-color: #FFFFFF;
-	padding: 0 7px 7px 7px;
+	padding: 7px;
 
 	-moz-box-shadow: 0 0 2px 1px #888;
 	-webkit-box-shadow: 0 0 2px 1px #888;
@@ -531,17 +544,6 @@ form, fieldset{
 	position: relative;
 }
 
-#wrap_r_t_sep{
-	display: none;
-
-	background: url("../img/right_t.png") no-repeat scroll 0 100% transparent;
-	height: 9px;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: 10;
-}
 
 #wrap_r_t .nav-tabs > li{
 	margin-bottom: 0;
@@ -590,18 +592,6 @@ form, fieldset{
 #wrap_r_c{
 	height: 620px;
 	overflow-y: auto;
-}
-
-#wrap_r_b{
-	display: none;
-
-	width: 710px;
-	margin: 0;
-	padding: 0;
-	line-height: 0;
-	font-size: 0;
-	background: url("../img/right_b.png") no-repeat scroll 0 100% transparent;
-	height: 5px;
 }
 
 .a_modal,
